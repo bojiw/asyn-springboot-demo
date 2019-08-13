@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/beauty_ssm?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8000
+asyn:
+  core:
+    env: test
+    jobName: test-boot
+    tableNum: 4
+    zookeeperUrl: 127.0.0.1:2181
+    executerFrequencys: 4s,5s,6s
+  callback:
+    errorCallBackBeanName: asynCmdErrorCallBack
+
+
