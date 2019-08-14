@@ -7,6 +7,7 @@
 - SmsController 接收发送短信请求异步发送
 - GiveRewardController 接收赠送奖励请求 异步赠送奖励
 - CouponController 定时赠送指定用户一批优惠券
+- OrderCreateListener和OrderModifyListener实现mq的顺序消费 保证同一笔订单肯定先处理订单创建消息 再处理订单修改消息
 
 com.asyncmdDemo.asyn.asynbiz 存放异步命令业务对象
 com.asyncmdDemo.asyn.asyncmd 存放异步命令对象
