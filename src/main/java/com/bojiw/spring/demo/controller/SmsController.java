@@ -1,10 +1,10 @@
 
 package com.bojiw.spring.demo.controller;
 
-import com.afa.asyncmdboot.asyn.SmsAsynCmd;
-import com.afa.asyncmdboot.asyn.asynbiz.SmsBiz;
-import com.afa.asyncmdboot.service.AsynCmdServer;
 import com.asyncmd.utils.SnowflakeIdWorkerUtil;
+import com.bojiw.spring.demo.asyn.asynbiz.SmsBiz;
+import com.bojiw.spring.demo.asyn.asyncmd.SmsAsynCmd;
+import com.bojiw.spring.demo.server.AsynCmdServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -42,7 +42,7 @@ public class SmsController {
         SnowflakeIdWorkerUtil snowflakeIdWorkerUtil = new SnowflakeIdWorkerUtil(0,0);
 
         String bizId = SmsAsynCmd.name + mobiles + snowflakeIdWorkerUtil.nextId();
-        asynCmdServer.notify(smsBiz,bizId,SmsAsynCmd.class);
+        asynCmdServer.notify(smsBiz,bizId,SmsAsynCmd.class,null);
 
         return "ok";
     }

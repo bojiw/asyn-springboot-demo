@@ -3,8 +3,8 @@ package com.bojiw.spring.demo.asyn.asynexecuter;
 
 import com.asyncmd.model.AbstractAsynExecuter;
 import com.asyncmd.model.AsynExecuterConf;
-import com.asyncmdDemo.asyn.asynbiz.GiveRewardBiz;
-import com.asyncmdDemo.asyn.asyncmd.GiveRewardAsynCmd;
+import com.bojiw.spring.demo.asyn.asynbiz.GiveRewardBiz;
+import com.bojiw.spring.demo.asyn.asyncmd.GiveRewardAsynCmd;
 import org.springframework.stereotype.Service;
 
 /**

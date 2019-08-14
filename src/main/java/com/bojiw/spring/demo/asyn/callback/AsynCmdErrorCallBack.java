@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
  * @author wangwendi
  * @version $Id: AsynCmdErrorCallBack.java, v 0.1 2019年08月01日 下午7:29 wangwendi Exp $
  */
-@Service("asynCmdErrorCallBack")
+@Service("groupErrorCallBack")
 public class AsynCmdErrorCallBack extends AbstractErrorCallBack {
     /**
      * 每次执行异常都会回调

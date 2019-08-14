@@ -2,8 +2,8 @@
 package com.bojiw.spring.demo.asyn.asynexecuter;
 
 import com.asyncmd.model.AbstractAsynExecuter;
-import com.asyncmdDemo.asyn.asynbiz.SmsBiz;
-import com.asyncmdDemo.asyn.asyncmd.SmsAsynCmd;
+import com.bojiw.spring.demo.asyn.asynbiz.SmsBiz;
+import com.bojiw.spring.demo.asyn.asyncmd.SmsAsynCmd;
 import org.springframework.stereotype.Service;
 
 /**

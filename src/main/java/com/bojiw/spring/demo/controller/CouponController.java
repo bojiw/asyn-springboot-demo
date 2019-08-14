@@ -1,8 +1,8 @@
 package com.bojiw.spring.demo.controller;
 
-import com.afa.asyncmdboot.asyn.SendCouponAsynCmd;
-import com.afa.asyncmdboot.asyn.asynbiz.SendCouponBiz;
 import com.asyncmd.manager.AsynExecuterFacade;
+import com.bojiw.spring.demo.asyn.asynbiz.SendCouponBiz;
+import com.bojiw.spring.demo.asyn.asyncmd.SendCouponAsynCmd;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;

@@ -2,7 +2,7 @@
 package com.bojiw.spring.demo.asyn.asyncmd;
 
 import com.asyncmd.model.AsynCmd;
-import com.asyncmdDemo.asyn.asynbiz.GiveRewardBiz;
+import com.bojiw.spring.demo.asyn.asynbiz.GiveRewardBiz;
 
 /**
  * 赠送奖励异步命令对象

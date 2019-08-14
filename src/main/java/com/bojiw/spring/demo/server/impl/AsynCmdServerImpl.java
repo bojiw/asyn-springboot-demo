@@ -4,7 +4,7 @@ package com.bojiw.spring.demo.server.impl;
 import com.asyncmd.manager.AsynExecuterFacade;
 import com.asyncmd.model.AsynBizObject;
 import com.asyncmd.model.AsynCmd;
-import com.asyncmdDemo.server.AsynCmdServer;
+import com.bojiw.spring.demo.server.AsynCmdServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

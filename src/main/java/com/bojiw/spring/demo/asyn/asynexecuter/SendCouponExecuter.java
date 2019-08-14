@@ -2,11 +2,11 @@
 package com.bojiw.spring.demo.asyn.asynexecuter;
 
 import com.asyncmd.model.AbstractAsynExecuter;
-import com.asyncmdDemo.asyn.asynbiz.SendCouponBiz;
-import com.asyncmdDemo.asyn.asynbiz.SmsBiz;
-import com.asyncmdDemo.asyn.asyncmd.SendCouponAsynCmd;
-import com.asyncmdDemo.asyn.asyncmd.SmsAsynCmd;
-import com.asyncmdDemo.server.AsynCmdServer;
+import com.bojiw.spring.demo.asyn.asynbiz.SendCouponBiz;
+import com.bojiw.spring.demo.asyn.asynbiz.SmsBiz;
+import com.bojiw.spring.demo.asyn.asyncmd.SendCouponAsynCmd;
+import com.bojiw.spring.demo.asyn.asyncmd.SmsAsynCmd;
+import com.bojiw.spring.demo.server.AsynCmdServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

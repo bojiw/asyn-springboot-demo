@@ -1,9 +1,9 @@
 
 package com.bojiw.spring.demo.controller;
 
-import com.afa.asyncmdboot.asyn.GiveRewardAsynCmd;
-import com.afa.asyncmdboot.asyn.asynbiz.GiveRewardBiz;
-import com.afa.asyncmdboot.service.AsynCmdServer;
+import com.bojiw.spring.demo.asyn.asynbiz.GiveRewardBiz;
+import com.bojiw.spring.demo.asyn.asyncmd.GiveRewardAsynCmd;
+import com.bojiw.spring.demo.server.AsynCmdServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,7 +39,7 @@ public class GiveRewardController {
         smsBiz.setIntegral(integral);
         //唯一业务id 根据业务来定义 需要全局唯一
         String bizId = "give" + userId + actId + System.currentTimeMillis();
-        asynCmdServer.notify(smsBiz,bizId, GiveRewardAsynCmd.class);
+        asynCmdServer.notify(smsBiz,bizId,GiveRewardAsynCmd.class,null);
         return "ok";
     }
 

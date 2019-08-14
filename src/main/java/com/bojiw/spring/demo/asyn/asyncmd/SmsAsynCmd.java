@@ -4,7 +4,7 @@ package com.bojiw.spring.demo.asyn.asyncmd;
 import com.asyncmd.enums.DispatchMode;
 import com.asyncmd.model.AsynCmd;
 import com.asyncmd.model.AsynCmdConf;
-import com.asyncmdDemo.asyn.asynbiz.SmsBiz;
+import com.bojiw.spring.demo.asyn.asynbiz.SmsBiz;
 
 /**
  * 短信异步命令
